@@ -17,6 +17,7 @@ echo '?> '>>index.php
 echo '<body>'>>index.php
 echo '</html>'>>index.php
 
+wget https://github.com/v2ray/v2ray-core/releases/latest/download/v2ray-linux-64.zip
 
 uuid=`cat /proc/sys/kernel/random/uuid`
 path=`echo $uuid | cut -f1 -d'-'`
