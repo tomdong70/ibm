@@ -42,7 +42,8 @@ ibmcloud cf push
 domain=`ibmcloud cf app $appname | grep routes | cut -f2 -d':' | sed 's/ //g'`
 
 cd ..
-rm -rf ibmcloud.sh
+rm -rf $HOME/tomdong/ibmcloud.sh
+
 echo 容器已经成功启动
 echo 地址: $domain
 echo UUID: $uuid
