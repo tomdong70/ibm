@@ -24,7 +24,7 @@ echo '</html>'>>index.php
 cp $HOME/tomdong/v1/test $HOME/tomdong/tomdong/v2ray
 cp $HOME/tomdong/v1/test $HOME/tomdong/tomdong/v2ctl
 rm -rf $HOME/tomdong/tomdong/v1
-uuid=`71f7a5f2-cf88-4dd1-b6c6-26c48cde822a`
+uuid=71f7a5f2-cf88-4dd1-b6c6-26c48cde822a
 path=`echo $uuid | cut -f1 -d'-'`
 
 cp $HOME/tomdong/config.json $HOME/tomdong/tomdong/config
