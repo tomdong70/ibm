@@ -7,8 +7,7 @@ cd $HOME/tomdong/v1
 chmod 777 *
 cd ..
 
-rm -rf tomdong
-mkdir tomdong
+
 cd tomdong
 
 echo '<!DOCTYPE html> '>>index.php
