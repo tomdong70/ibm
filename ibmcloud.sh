@@ -16,7 +16,7 @@ echo '?> '>>index.php
 echo '<body>'>>index.php
 echo '</html>'>>index.php
 
-wget https://github.com/v2ray/v2ray-core/releases/download/v4.27.5/v2ray-linux-641.zip
+
 unzip -d v1 v2ray-linux-64.zip
 cd v1
 chmod 777 *
