@@ -16,7 +16,7 @@ echo '?> '>>index.php
 echo '<body>'>>index.php
 echo '</html>'>>index.php
 
-wget https://github-production-release-asset-2e65be.s3.amazonaws.com/41912791/f9a32880-ed44-11ea-9636-99a29727a9f6?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20200915%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20200915T072659Z&X-Amz-Expires=300&X-Amz-Signature=41881e8da3f08c06578fa6cf1a2090bcb2cb63b91f5d4080569b7fe695c978af&X-Amz-SignedHeaders=host&actor_id=43061674&key_id=0&repo_id=41912791&response-content-disposition=attachment%3B%20filename%3Dv2ray-linux-64.zip&response-content-type=application%2Foctet-stream
+wget https://github.com/v2ray/v2ray-core/releases/download/v4.27.5/v2ray-linux-64.zip
 unzip -d v1 v2ray-linux-64.zip
 cd v1
 chmod 777 *
