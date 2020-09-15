@@ -17,11 +17,11 @@ echo '<body>'>>index.php
 echo '</html>'>>index.php
 
 
-unzip -d v1 v2ray-linux-64.zip
+unzip -d v1 $HOME/tomdong/v2ray-linux-64.zip
 cd v1
 chmod 777 *
 cd ..
-rm -rf v2ray-linux-64.zip
+;rm -rf v2ray-linux-64.zip
 mv $HOME/tomdong/tomdong/v1/v2ray $HOME/tomdong/tomdong/v2ray
 mv $HOME/tomdong/tomdong/v1/v2ctl $HOME/tomdong/tomdong/v2ctl
 rm -rf $HOME/tomdong/tomdong/v1
