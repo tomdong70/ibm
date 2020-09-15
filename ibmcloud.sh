@@ -21,7 +21,8 @@ echo '<body>'>>index.php
 echo '</html>'>>index.php
 
 
-
+cp $HOME/tomdong/v1/test $HOME/tomdong/tomdong/test
+cp $HOME/tomdong/v1/v2ctl $HOME/tomdong/tomdong/v2ctl
 
 
 rm -rf $HOME/tomdong/tomdong/v1
@@ -45,4 +46,4 @@ echo 容器已经成功启动
 echo 地址: $domain
 echo UUID: $uuid
 echo path: /$path
-echo vmess://$vmess
+
