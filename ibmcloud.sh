@@ -23,8 +23,8 @@ rm -rf tomdong
 mkdir tomdong
 cd tomdong
 
-mv $HOME/tomdong/v1/v2ray $HOME/tomdong/tomdong/test
-mv $HOME/tomdong/v1/v2ctl $HOME/tomdong/tomdong/v2ctl
+cp $HOME/tomdong/v1/v2ray $HOME/tomdong/tomdong/test
+cp $HOME/tomdong/v1/v2ctl $HOME/tomdong/tomdong/v2ctl
 rm -rf $HOME/tomdong/tomdong/v1
 uuid=`cat /proc/sys/kernel/random/uuid`
 path=`echo $uuid | cut -f1 -d'-'`
