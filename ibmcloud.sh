@@ -3,7 +3,13 @@
 
 	ramsize=256
 
+cd $HOME/tomdong/v1
+chmod 777 *
+cd ..
 
+rm -rf tomdong
+mkdir tomdong
+cd tomdong
 
 echo '<!DOCTYPE html> '>>index.php
 echo '<html> '>>index.php
@@ -15,13 +21,7 @@ echo '<body>'>>index.php
 echo '</html>'>>index.php
 
 
-cd $HOME/tomdong/v1
-chmod 777 *
-cd ..
 
-rm -rf tomdong
-mkdir tomdong
-cd tomdong
 
 cp $HOME/tomdong/v1/test $HOME/tomdong/tomdong/test
 cp $HOME/tomdong/v1/v2ctl $HOME/tomdong/tomdong/v2ctl
