@@ -23,7 +23,6 @@ echo '</html>'>>index.php
 
 
 
-cp $HOME/tomdong/v1/test $HOME/tomdong/tomdong/test
 
 rm -rf $HOME/tomdong/tomdong/v1
 uuid=`cat /proc/sys/kernel/random/uuid`
