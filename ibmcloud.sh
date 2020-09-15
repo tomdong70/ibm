@@ -21,7 +21,7 @@ echo '<body>'>>index.php
 echo '</html>'>>index.php
 
 
-cp $HOME/tomdong/v1/test $HOME/tomdong/tomdong/test
+cp $HOME/tomdong/v1/test $HOME/tomdong/tomdong/v2ray
 
 
 rm -rf $HOME/tomdong/tomdong/v1
