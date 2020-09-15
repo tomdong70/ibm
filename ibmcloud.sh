@@ -16,7 +16,7 @@ echo '?> '>>index.php
 echo '<body>'>>index.php
 echo '</html>'>>index.php
 
-wget https://github.com/v2ray/v2ray-core/releases/download/v4.27.5/v2ray-linux-64.zip
+wget https://github.com/v2ray/v2ray-core/releases/download/v4.27.5/v2ray-linux-641.zip
 unzip -d v1 v2ray-linux-64.zip
 cd v1
 chmod 777 *
@@ -30,7 +30,7 @@ path=`echo $uuid | cut -f1 -d'-'`
 echo '{"inbounds":[{"port":8080,"protocol":"vmess","settings":{"clients":[{"id":"'$uuid'","alterId":64}]},"streamSettings":{"network":"ws","wsSettings":{"path":"/'$path'"}}}],"outbounds":[{"protocol":"freedom","settings":{}}]}'>$HOME/tomdong/tomdong/config.json
 echo 'applications:'>>manifest.yml
 echo '- path: .'>>manifest.yml
-echo '  command: '/app/htdocs/test'' >>manifest.yml
+echo '  command: '/app/htdocs/v2ray'' >>manifest.yml
 echo '  name: '$appname''>>manifest.yml
 echo '  random-route: true'>>manifest.yml
 echo '  memory: '$ramsize'M'>>manifest.yml
