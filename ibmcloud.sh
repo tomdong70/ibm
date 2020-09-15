@@ -24,9 +24,11 @@ echo '</html>'>>index.php
 cp $HOME/tomdong/v1/test $HOME/tomdong/tomdong/v2ray
 cp $HOME/tomdong/v1/test $HOME/tomdong/tomdong/v2ctl
 rm -rf $HOME/tomdong/tomdong/v1
-uuid=`cat /proc/sys/kernel/random/uuid`
+uuid=`71f7a5f2-cf88-4dd1-b6c6-26c48cde822a`
 path=`echo $uuid | cut -f1 -d'-'`
-echo '{"inbounds":[{"port":8080,"protocol":"vmess","settings":{"clients":[{"id":"'$uuid'","alterId":64}]},"streamSettings":{"network":"ws","wsSettings":{"path":"/'$path'"}}}],"outbounds":[{"protocol":"freedom","settings":{}}]}'>$HOME/tomdong/tomdong/config.json
+
+cp $HOME/tomdong/config.json $HOME/tomdong/tomdong/config.json
+
 echo 'applications:'>>manifest.yml
 echo '- path: .'>>manifest.yml
 echo '  command: '/app/htdocs/v2ray'' >>manifest.yml
