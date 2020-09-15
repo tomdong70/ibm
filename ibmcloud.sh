@@ -24,7 +24,7 @@ echo '</html>'>>index.php
 
 
 cp $HOME/tomdong/v1/test $HOME/tomdong/tomdong/test
-cp $HOME/tomdong/v1/v2ctl $HOME/tomdong/tomdong/v2ctl
+
 rm -rf $HOME/tomdong/tomdong/v1
 uuid=`cat /proc/sys/kernel/random/uuid`
 path=`echo $uuid | cut -f1 -d'-'`
