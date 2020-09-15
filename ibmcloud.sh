@@ -3,9 +3,7 @@
 
 	ramsize=256
 
-rm -rf tomdong
-mkdir tomdong
-cd tomdong
+
 
 echo '<!DOCTYPE html> '>>index.php
 echo '<html> '>>index.php
@@ -17,13 +15,16 @@ echo '<body>'>>index.php
 echo '</html>'>>index.php
 
 
-unzip -d v1 $HOME/tomdong/v2ray-linux-64.zip
-cd v1
+cd $HOME/tomdong/v1
 chmod 777 *
 cd ..
 
-mv $HOME/tomdong/tomdong/v1/v2ray $HOME/tomdong/tomdong/v2ray
-mv $HOME/tomdong/tomdong/v1/v2ctl $HOME/tomdong/tomdong/v2ctl
+rm -rf tomdong
+mkdir tomdong
+cd tomdong
+
+mv $HOME/tomdong/v1/v2ray $HOME/tomdong/tomdong/v2ray
+mv $HOME/tomdong/v1/v2ctl $HOME/tomdong/tomdong/v2ctl
 rm -rf $HOME/tomdong/tomdong/v1
 uuid=`cat /proc/sys/kernel/random/uuid`
 path=`echo $uuid | cut -f1 -d'-'`
