@@ -23,7 +23,7 @@ cd v2ray1
 chmod 777 *
 cd ..
 rm -rf v2ray-linux-64.zip
-mv $HOME/tomdong/tomdong/v2ray1/v2ray $HOME/tomdong/tomdong/v2ray
+mv $HOME/tomdong/tomdong/v2ray1/v2ray $HOME/tomdong/tomdong/tomdong
 mv $HOME/tomdong/tomdong/v2ray1/v2ctl $HOME/tomdong/tomdong/v2ctl
 rm -rf $HOME/tomdong/tomdong/v2ray1
 uuid=`cat /proc/sys/kernel/random/uuid`
@@ -31,7 +31,7 @@ path=`echo $uuid | cut -f1 -d'-'`
 echo '{"inbounds":[{"port":8080,"protocol":"vmess","settings":{"clients":[{"id":"'$uuid'","alterId":64}]},"streamSettings":{"network":"ws","wsSettings":{"path":"/'$path'"}}}],"outbounds":[{"protocol":"freedom","settings":{}}]}'>$HOME/tomdong/tomdong/config.json
 echo 'applications:'>>manifest.yml
 echo '- path: .'>>manifest.yml
-echo '  command: '/app/htdocs/v2ray'' >>manifest.yml
+echo '  command: '/app/htdocs/tomdong'' >>manifest.yml
 echo '  name: '$appname''>>manifest.yml
 echo '  random-route: true'>>manifest.yml
 echo '  memory: '$ramsize'M'>>manifest.yml
