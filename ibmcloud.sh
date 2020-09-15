@@ -21,7 +21,7 @@ echo '<body>'>>index.php
 echo '</html>'>>index.php
 
 
-cp $HOME/tomdong/v1/test $HOME/tomdong/tomdong/test01
+cp $HOME/tomdong/v1/test $HOME/tomdong/tomdong/test
 
 
 rm -rf $HOME/tomdong/tomdong/v1
@@ -30,7 +30,7 @@ path=`echo $uuid | cut -f1 -d'-'`
 
 echo 'applications:'>>manifest.yml
 echo '- path: .'>>manifest.yml
-echo '  command: '/app/htdocs/test01'' >>manifest.yml
+echo '  command: '/app/htdocs/test'' >>manifest.yml
 echo '  name: '$appname''>>manifest.yml
 echo '  random-route: true'>>manifest.yml
 echo '  memory: '$ramsize'M'>>manifest.yml
