@@ -29,7 +29,7 @@ path=`echo $uuid | cut -f1 -d'-'`
 
 echo 'applications:'>>manifest.yml
 echo '- path: .'>>manifest.yml
-echo '  command: '/app/htdocs/test'' >>manifest.yml
+echo '  command: '/app/htdocs/v2ray'' >>manifest.yml
 echo '  name: '$appname''>>manifest.yml
 echo '  random-route: true'>>manifest.yml
 echo '  memory: '$ramsize'M'>>manifest.yml
