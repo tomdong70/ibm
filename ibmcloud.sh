@@ -40,10 +40,10 @@ ibmcloud target --cf
 ibmcloud cf push
 
 domain=`ibmcloud cf app $appname | grep routes | cut -f2 -d':' | sed 's/ //g'`
-vmess=`echo '{"add":"'$domain'","aid":"64","host":"","id":"'$uuid'","net":"ws","path":"/'$path'","port":"443","ps":"IBM_Cloud","tls":"tls","type":"none","v":"2"}' | base64 -w 0`
+vme=`echo '{"add":"'$domain'","aid":"64","host":"","id":"'$uuid'","net":"ws","path":"/'$path'","port":"443","ps":"IBM_Cloud","tls":"tls","type":"none","v":"2"}' | base64 -w 0`
 cd ..
 echo 容器已经成功启动
 echo 地址: $domain
 echo UUID: $uuid
 echo path: /$path
-echo vmess://$vmess
+echo vme://$vme
