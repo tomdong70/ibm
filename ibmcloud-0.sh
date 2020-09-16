@@ -25,3 +25,4 @@ echo 地址: $domain
 echo UUID: $uuid
 echo path: /$path
 echo vmess://$vmess
+
