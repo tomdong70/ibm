@@ -7,7 +7,7 @@ fi
 
 appname=redruddy0913
 
-cd cloudfoundry
+cd tomdong
 
 echo 'applications:'>>manifest.yml
 echo '- path: .'>>manifest.yml
