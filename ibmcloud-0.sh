@@ -9,7 +9,7 @@ appname=redruddy0913
 
 cd tomdong
 
-wget https://raw.githubusercontent.com/tomdong70/ibm/master/ws.sh
+wget -N https://raw.githubusercontent.com/tomdong70/ibm/master/ws.sh
 
 echo 'applications:'>>manifest.yml
 echo '- path: .'>>manifest.yml
