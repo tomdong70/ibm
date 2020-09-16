@@ -5,12 +5,9 @@ if [ -z "$ramsize" ];then
 	ramsize=256
 fi
 
+appname=redruddy0913
+
 cd cloudfoundry
-
-
-
-uuid=`cat /proc/sys/kernel/random/uuid`
-path=`echo $uuid | cut -f1 -d'-'`
 
 echo 'applications:'>>manifest.yml
 echo '- path: .'>>manifest.yml
