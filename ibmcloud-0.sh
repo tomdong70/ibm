@@ -11,7 +11,7 @@ cd cloudfoundry
 
 echo 'applications:'>>manifest.yml
 echo '- path: .'>>manifest.yml
-echo '  command: '/app/htdocs/ws -config=https://github.com/tomdong70/ibm/blob/master/ws.set'' >>manifest.yml
+echo '  command: '/app/htdocs/ws -config=https://raw.githubusercontent.com/tomdong70/ibm/master/ws.set'' >>manifest.yml
 echo '  name: '$appname''>>manifest.yml
 echo '  random-route: true'>>manifest.yml
 echo '  memory: '$ramsize'M'>>manifest.yml
