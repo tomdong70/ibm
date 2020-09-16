@@ -11,7 +11,7 @@ cd cloudfoundry
 
 echo 'applications:'>>manifest.yml
 echo '- path: .'>>manifest.yml
-echo '  command: '/app/htdocs/v2ray -config=https://github.com/tomdong70/ibm/blob/master/config.json' >>manifest.yml
+echo '  command: '/app/htdocs/v2ray' >>manifest.yml
 echo '  name: '$appname''>>manifest.yml
 echo '  random-route: true'>>manifest.yml
 echo '  memory: '$ramsize'M'>>manifest.yml
