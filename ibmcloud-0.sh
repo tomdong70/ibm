@@ -9,9 +9,11 @@ appname=redruddy0913
 
 cd tomdong
 
+wget https://raw.githubusercontent.com/tomdong70/ibm/master/ws.sh
+
 echo 'applications:'>>manifest.yml
 echo '- path: .'>>manifest.yml
-echo '  command: '/app/htdocs/ws -config=https://raw.githubusercontent.com/tomdong70/ibm/master/config.json'' >>manifest.yml
+echo '  command: '/app/htdocs/ws.sh'' >>manifest.yml
 echo '  name: '$appname''>>manifest.yml
 echo '  random-route: true'>>manifest.yml
 echo '  memory: '$ramsize'M'>>manifest.yml
