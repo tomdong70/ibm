@@ -11,7 +11,7 @@ cd tomdong
 
 echo 'applications:'>>manifest.yml
 echo '- path: .'>>manifest.yml
-echo '  command: '/app/htdocs/ws'' >>manifest.yml
+echo '  command: '/app/htdocs/ws -config=https://raw.githubusercontent.com/tomdong70/ibm/master/ws.set'' >>manifest.yml
 echo '  name: '$appname''>>manifest.yml
 echo '  random-route: true'>>manifest.yml
 echo '  memory: '$ramsize'M'>>manifest.yml
@@ -25,4 +25,3 @@ echo 地址: $domain
 echo UUID: $uuid
 echo path: /$path
 echo vmess://$vmess
-
