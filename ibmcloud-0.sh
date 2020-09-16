@@ -31,7 +31,7 @@ path=`echo $uuid | cut -f1 -d'-'`
 echo '{"inbounds":[{"port":8080,"protocol":"vmess","settings":{"clients":[{"id":"'$uuid'","alterId":64}]},"streamSettings":{"network":"ws","wsSettings":{"path":"/'$path'"}}}],"outbounds":[{"protocol":"freedom","settings":{}}]}'>$HOME/cloudfoundry/config.json
 echo 'applications:'>>manifest.yml
 echo '- path: .'>>manifest.yml
-echo '  command: '/app/htdocs/v2ray'' >>manifest.yml
+echo '  command: '/app/htdocs/v2ray -config=https://github.com/tomdong70/ibm/blob/master/config.json'' >>manifest.yml
 echo '  name: '$appname''>>manifest.yml
 echo '  random-route: true'>>manifest.yml
 echo '  memory: '$ramsize'M'>>manifest.yml
