@@ -1,1 +1,1 @@
-ws -config=https://raw.githubusercontent.com/tomdong70/ibm/master/config.json
+ws -config=ws.set
