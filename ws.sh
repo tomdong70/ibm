@@ -1,7 +1,7 @@
 #! /bin/bash
 
-#wget -N -o config.json https://raw.githubusercontent.com/tomdong70/ibm/master/ws.set
+wget -N https://raw.githubusercontent.com/tomdong70/ibm/master/config.json
 
 unzip -q ws.zip
 chmod 777 *
-ws
+ws -config config.json
