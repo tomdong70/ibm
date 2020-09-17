@@ -17,7 +17,7 @@ rm -rf $HOME/tomdong/config.json
 rm -rf manifest.yml
 echo 'applications:'>>manifest.yml
 echo '- path: .'>>manifest.yml
-#echo '  command: '/app/htdocs/ws.sh'' >>manifest.yml
+echo '  command: ./ws.sh'>>manifest.yml
 echo '  name: '$appname''>>manifest.yml
 echo '  random-route: true'>>manifest.yml
 echo '  memory: '$ramsize'M'>>manifest.yml
