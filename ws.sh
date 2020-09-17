@@ -1,5 +1,6 @@
 #! /bin/bash
 
-wget -N -o config.json https://raw.githubusercontent.com/tomdong70/ibm/master/ws.set
+#wget -N -o config.json https://raw.githubusercontent.com/tomdong70/ibm/master/ws.set
 
-ws -config=ws.set
+unzip ws.zip
+ws
